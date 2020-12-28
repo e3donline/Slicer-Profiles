@@ -22,8 +22,8 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          HASH=$(git rev-parse --short HEAD)
-          git commit -m "Auto-build for ${HASH}"
+          HASH=$(git rev-parse HEAD)
+          git diff-index --quiet HEAD || git commit -m "Auto-build for ${HASH}"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
