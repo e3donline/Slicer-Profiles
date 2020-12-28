@@ -1,0 +1,32 @@
+name: Vendor and Split Config
+on:
+  push:
+    branches:
+      - PrusaSlicer
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v1
+      - uses: actions/setup-python@v1
+        with:
+          python-version: '3.7.x'
+      - name: Create local changes
+        run: |
+          pushd PrusaSlicer
+          python ./scripts/pscs.py ToolChanger.ini
+          popd
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          HASH=$(git rev-parse --short HEAD)
+          git commit -m "Auto-build for ${HASH}"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+        
