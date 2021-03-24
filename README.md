@@ -3,7 +3,7 @@ Slicer settings for the Motion System &amp; ToolChanger.
 
 #### Slicers.
 
-There are many slicers available. However, SuperSlicer is a good alternative to S3D and is a fork of PrusaSlicer.
+There are many slicers available. However, SuperSlicer is a good alternative to S3D and is a fork of PrusaSlicer. SuperSlicer is designed for ToolChangers.
 
 https://github.com/supermerill/SuperSlicer
 
