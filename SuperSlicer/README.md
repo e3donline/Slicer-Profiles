@@ -1,3 +1,3 @@
 #### Experimental
 
-The SuperSlicer Bundle is configured for ASMBL. Please adjust to your own liking.
+The SuperSlicer Bundle is configured for ASMBL on T3. Please adjust to your own liking.
