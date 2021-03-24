@@ -1,6 +1,12 @@
 # Slicer Profiles
 Slicer settings for the Motion System &amp; ToolChanger.
 
+#### Slicers.
+
+There are many slicers available. However, SuperSlicer is a good alternative to S3D and is a fork of PrusaSlicer.
+
+https://github.com/supermerill/SuperSlicer
+
 #### Notes.
 
 Tool changes are actioned simply by issuing T0, T1, T2, T3 and T-1. All tool changes are firmware controlled and no tool-change scripts are required in the slicer. To unload any tool at the end of a print issue a T-1 command and the active tool will be replaced back onto it's dock.
