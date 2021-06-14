@@ -34,6 +34,6 @@ Below is an example Ending Script.
 
 #### Calibration.
 
-STLs have been added for you to create your own calibrations. Graduations are 100um major & 50um minor.
+STLs have been added for you to create your own calibrations. Graduations are 100μm major & 50μm minor.
 
 Alternatively consider TAMV | https://www.youtube.com/watch?v=1nGc_hFzK0s
